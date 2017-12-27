@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SpinnerDemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string-array name="myarray">
+	    <item>C</item>
+	    <item>C++</item>
+	    <item>Core Java</item>
+	    <item>Advance Java</item>
+	    <item>Android</item>
+	    <item>Oracle</item>
+	    <item>PHP</item>
+	    </string-array>
+</resources>

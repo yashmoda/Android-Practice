@@ -1,0 +1,18 @@
+package com.example.sharedpreferencedemo;
+
+import android.app.Activity;
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+
+public class First extends Activity {
+	private static final String MyPREFERENCES = "MyPrefs";
+	SharedPreferences sharedpreferences;
+
+	@Override
+	protected void onCreate(Bundle b)
+	{
+		 sharedpreferences =getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+	}
+
+}

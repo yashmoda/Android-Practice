@@ -1,0 +1,7 @@
+package com.example.fragmentexample1;
+
+import android.app.Fragment;
+
+public class FragmentOne extends Fragment {
+
+}

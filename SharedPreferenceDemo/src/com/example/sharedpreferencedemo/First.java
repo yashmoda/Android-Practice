@@ -1,0 +1,46 @@
+package com.example.sharedpreferencedemo;
+
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+
+public class First extends Activity {
+	EditText ed1,ed2,ed3;
+	
+	private static final String MyPREFERENCES = "MyPrefs";
+	public static final String Name = "nameKey";
+	   public static final String Phone = "phoneKey";
+	   public static final String Email = "emailKey";
+	   
+	SharedPreferences sharedpreferences;
+
+	@Override
+	protected void onCreate(Bundle b)
+	{
+		super.onCreate(b);
+		setContentView(R.layout.first);
+		
+	}
+	public void load(View v)
+	{
+		 sharedpreferences =getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+		 String name=sharedpreferences.getString(Name,null);
+		 String phone=sharedpreferences.getString(Phone,null);
+		 String email=sharedpreferences.getString(Email,null);
+		 ed1=(EditText)findViewById(R.id.editText);
+	     ed2=(EditText)findViewById(R.id.editText2);
+	     ed3=(EditText)findViewById(R.id.editText3);
+	     ed1.setText(name);
+	     ed2.setText(phone);
+	     ed3.setText(email);
+	}
+	public void back(View v)
+	{
+		startActivity(new Intent(this,MainActivity.class));
+	}
+
+}

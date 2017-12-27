@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2bfdf"
+    tools:ignore="Deprecated" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="130dp"
+        android:layout_y="15dp"
+        android:text="@string/register"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textview_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="50dp"
+        android:layout_y="90dp"
+        android:text="@string/Name"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/edittext_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="130dp"
+        android:layout_y="90dp"
+        android:inputType="text"
+        tools:ignore="LabelFor" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textview_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="35dp"
+        android:layout_y="140dp"
+        android:text="@string/address"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/edittext_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="130dp"
+        android:layout_y="145dp"
+        android:inputType="text"
+        tools:ignore="ExtraText,LabelFor" >
+
+        <requestFocus />
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/textview_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="35dp"
+        android:layout_y="190dp"
+        android:text="@string/gender"
+        android:textSize="30sp" />
+
+    <ImageButton
+        android:id="@+id/imagebutton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_x="440dp"
+        android:layout_y="75dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/images"
+        tools:ignore="HardcodedText,ContentDescription" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="150dp"
+        android:layout_y="190dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radiobutton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/M"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/radiobutton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/F"
+            android:textSize="30sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textview_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="20dp"
+        android:layout_y="250dp"
+        android:text="@string/user_name"
+        android:textSize="30sp"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="170dp"
+        android:layout_y="300dp"
+        android:ems="10"
+        android:inputType="text"
+        tools:ignore="LabelFor" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textview_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="20dp"
+        android:layout_y="250dp"
+        android:text="@string/password"
+        android:textSize="30sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="170dp"
+        android:layout_y="300dp"
+        android:ems="10"
+        android:inputType="numberPassword"
+        tools:ignore="LabelFor" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="206dp"
+        android:layout_y="455dp"
+        android:text="@string/submit" />
+
+</AbsoluteLayout>
